@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+  <div class="container">
+    <a class="navbar-brand" href="/home">
+      <div>
+        <h1>Caitlin's Mobile<span class="text-success"> Wallet</span></h1>
+      </div>
+    </a>
+
+    <button
+      #navbarToggler
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      (click)="isShown = !isShown"
+      [attr.aria-expanded]="isShown"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: isShown }"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="fuel">Fuel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="food">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="fun">Fun</a>
+          </li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>

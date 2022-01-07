@@ -1,0 +1,29 @@
+.header {
+  text-align: center;
+  margin: auto;
+  width: auto;
+  height: 1000px;
+  background: linear-gradient(black, grey);
+}
+
+em {
+  font-size: 40px;
+  font-style: italic;
+}
+
+h3 {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-style: oblique;
+  font-size: 30px;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
